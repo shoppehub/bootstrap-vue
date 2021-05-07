@@ -3,11 +3,23 @@
   "private": true,
   "version": "0.1.0",
   "license": "ISC",
-  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "./dist/atable.umd.js",
+  "module": "./dist/atable.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/atable.es.js",
+      "require": "./dist/atable.umd.js"
+    }
+  },
+  "scripts": {
+    "test":"jest tests",
+    "build": "vue-tsc --noEmit && vite build"
+  },
   "peerDependencies": {
     "vue": "^3.0.11"
-  },
-  "devDependencies": {
-    "@vue/test-utils": "^2.0.0-rc.6"
   }
 }

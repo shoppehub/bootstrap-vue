@@ -1,11 +1,11 @@
 {
-  "name": "@sadmin/table",
-  "version": "1.0.0",
+  "name": "@shoppehub/atable",
+  "version": "0.0.0",
   "description": "> TODO: description",
   "author": "jiaoge <yingjunjiao@outlook.com>",
   "homepage": "https://github.com/shoppehub/sadmin#readme",
   "license": "ISC",
-  "main": "lib/table.js",
+  "main": "index.ts",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -14,7 +14,7 @@
     "lib"
   ],
   "publishConfig": {
-    "registry": "http://npm.dev.youkeda.com:9000"
+    "registry": "https://registry.npmjs.org/"
   },
   "repository": {
     "type": "git",
@@ -25,5 +25,8 @@
   },
   "bugs": {
     "url": "https://github.com/shoppehub/sadmin/issues"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.11"
   }
 }

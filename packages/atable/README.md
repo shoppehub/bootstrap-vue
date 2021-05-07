@@ -1,11 +1,11 @@
-# `table`
+# `atable`
 
 > TODO: description
 
 ## Usage
 
 ```
-const table = require('table');
+const atable = require('atable');
 
 // TODO: DEMONSTRATE API
 ```

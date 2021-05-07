@@ -4,8 +4,10 @@ import base from "../../jest.config.base";
 
 // const pkg = require(path.resolve(__dirname, "package.json"));
 
+import pkg from "./package.json";
+
 export default {
   ...base,
-  name: "table",
-  displayName: "table",
+  name: pkg.name,
+  displayName: pkg.name,
 };
